@@ -27,8 +27,9 @@ fun bubbleSort(list: Array<Int>){
     var swapped = true;
 
     do {
+        swapped = false
         for(i in 0 until n - 1){
-            swapped = false
+            println("i is $i, comparing " + list[i] + " and " + list[i+1])
             if(list[i] > list[i+1]){
                 println(Arrays.toString(list))
                 var temp: Int = list[i]
